@@ -24,7 +24,7 @@
 
             <Image Aspect="AspectFill">
                 <Image.Source>
-                    <UriImageSource Uri="https://avatars2.githubusercontent.com/u/261265?v=4" />
+                    <UriImageSource Uri="{Binding avatar_url}" />
                 </Image.Source>
             </Image>
 
