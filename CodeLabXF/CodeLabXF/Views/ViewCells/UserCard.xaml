@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ViewCell
+    x:Class="CodeLabXF.Views.ViewCells.UserCard"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid VerticalOptions="Center">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Frame
+            Grid.Column="0"
+            Padding="0"
+            CornerRadius="40"
+            HasShadow="False"
+            HeightRequest="80"
+            WidthRequest="80">
+
+            <Image Aspect="AspectFill">
+                <Image.Source>
+                    <UriImageSource Uri="https://avatars2.githubusercontent.com/u/261265?v=4" />
+                </Image.Source>
+            </Image>
+
+        </Frame>
+
+        <StackLayout Grid.Column="1" VerticalOptions="Center">
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="{Binding login}"
+                TextColor="Black" />
+            <Label
+                FontSize="18"
+                Text="{Binding url}"
+                TextColor="Gray" />
+        </StackLayout>
+
+    </Grid>
+
+</ViewCell>
